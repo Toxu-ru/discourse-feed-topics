@@ -1,0 +1,4 @@
+plugins:
+  feed_topics_enabled:
+    default: true
+    client: true

@@ -1,7 +1,7 @@
 # name: discourse-feed_topics
 # about: Adds feed to topics
 # version: 0.1
-# author: Evg toxu.ru
+# author: Joe Buhlig -> Evg toxu.ru
 # url: https://github.com/Toxu-ru/discourse-feed-topics
 
 enabled_site_setting :feed_topics_enabled

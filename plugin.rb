@@ -14,8 +14,6 @@ Discourse.anonymous_filters.push(:feed)
 after_initialize do
     if SiteSetting.feed_topics_enabled
 
-
-
 		require_dependency 'topic_query'
 		class ::TopicQuery
 			SORTABLE_MAPPING["feed"] = "custom_fields.upvote_feed"
@@ -27,7 +25,7 @@ after_initialize do
 		end
 
 	
-    TopicList.preloaded_custom_fields << "upvote_feed" if TopicList.respond_to? :preloaded_custom_fields
+     TopicList.preloaded_custom_fields << "upvote_feed" if TopicList.respond_to? :preloaded_custom_fields
 
 	end
 	
